@@ -28,6 +28,7 @@ function App() {
         >
           Count is {count}
         </button>
+        <p>hello there friends</p>
       </section>
 
       <div className="ticks"></div>
