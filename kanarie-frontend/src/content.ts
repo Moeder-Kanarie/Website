@@ -51,6 +51,7 @@ export const folklore: Story[] = [
     year: '2016',
     title: 'Moeder Kanarie is geboren',
     text: 'Op 23 februari 2016 richten vrienden uit Sint-Truiden Moeder Kanarie op, om de geest van Cicindria verder te zetten. Op het schild: de arend en de appel van Sint-Truiden, en de zirkel met de K. Het begint met voetbalavonden en groeit uit tot iets wekelijks.',
+    img: '/img/groep.jpg',
   },
   {
     year: '2015–2019',
@@ -134,10 +135,10 @@ export const praesidia: Board[] = [
   {
     year: '2026-2027',
     members: [
-      { name: 'Michael Bielen', role: 'Praeses', text: 'Houdt de club draaiende, met focus op sfeer, vriendschap en liefde.' },
-      { name: 'Ronan Stiers', role: 'Vice-praeses', text: 'Rechterhand van de praeses. Mee achter clubavonden en cantussen.' },
-      { name: 'Nicole Laeremans', role: 'Ab-actis', text: 'Notulen, archief, truien en de foto’s van elke activiteit.' },
-      { name: 'Niels Schutt', role: 'Schachtenmeester', text: 'Aanspreekpunt en beschermer van de schachten.' },
+      { name: 'Michaël Bielen', role: 'Praeses', img: '/img/bestuur/2026-michael-sq.jpg', text: 'Houdt de club draaiende, met focus op sfeer, vriendschap en liefde.' },
+      { name: 'Ronan Stiers', role: 'Vice-praeses', img: '/img/bestuur/2026-ronan-sq.jpg', text: 'Rechterhand van de praeses. Mee achter clubavonden en cantussen.' },
+      { name: 'Nicole Laeremans', role: 'Ab-actis', img: '/img/bestuur/2026-nicole-sq.jpg', text: 'Notulen, archief, truien en de foto’s van elke activiteit.' },
+      { name: 'Niels Schütt', role: 'Schachtenmeester', img: '/img/bestuur/2026-niels-sq.jpg', text: 'Aanspreekpunt en beschermer van de schachten.' },
     ],
   },
   {

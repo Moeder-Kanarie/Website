@@ -100,8 +100,8 @@ export default function Home() {
             </Link>
           </div>
           <div className="grid people">
-            {current.members.map((m) => (
-              <MemberCard key={m.name} m={m} />
+            {current.members.map((m, i) => (
+              <MemberCard key={i} m={m} />
             ))}
           </div>
         </div>
