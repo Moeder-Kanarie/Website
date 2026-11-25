@@ -46,8 +46,8 @@ export default function Praesidium() {
             </div>
           ) : (
             <div className="grid people">
-              {board.members.map((m) => (
-                <MemberCard key={m.name} m={m} />
+              {board.members.map((m, i) => (
+                <MemberCard key={i} m={m} />
               ))}
             </div>
           )}

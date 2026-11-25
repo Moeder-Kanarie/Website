@@ -105,7 +105,7 @@ export default function OverOns() {
 
       <section className="section section-alt">
         <div className="container split split-rev">
-          <img className="photo" src="/img/groep.jpg" alt="Leden van Moeder Kanarie op de Grote Markt in Leuven" loading="lazy" />
+          <img className="lustrum-side" src="/img/lustrumSchildKanaries.webp" alt="Lustrumschild 10 jaar Moeder Kanarie" loading="lazy" />
           <div>
             <p className="eyebrow">Vandaag</p>
             <h2>
