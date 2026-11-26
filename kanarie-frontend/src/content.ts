@@ -44,7 +44,7 @@ export const folklore: Story[] = [
   {
     year: '1982–83',
     title: 'Het XVII lustrum en de plaat',
-    text: 'Voor het lustrum brengt Cicindria een echte plaat uit, met op de B-kant “Het Cicindria-lied”. De lustrummedaille hangt vandaag nog altijd bij ons. In 1988 gaat Cicindria opnieuw op pauze.',
+    text: 'Voor het lustrum brengt Cicindria een echte plaat uit, met op de B-kant “Het Cicindria-lied”. De lustrummedaille hangt vandaag nog altijd in de Boulle in Leuven. In 1988 gaat Cicindria opnieuw op pauze.',
     img: '/gallery/c5963457-t.jpg',
   },
   {
