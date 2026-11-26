@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { Link, NavLink, useLocation } from 'react-router'
-import { activities, EMAIL, JOIN_URL, nav, type Member } from './content'
+import { activities, EMAIL, JOIN_URL, nav, REGLEMENT_URL, SOCIALS, type Member } from './content'
 
 // Naar boven scrollen bij een nieuwe pagina, maar niet bij wisselen binnen dezelfde sectie
 // (bv. van het ene praesidiumjaar naar het andere).
@@ -143,6 +143,11 @@ export function Footer() {
                 <Link to={n.to}>{n.label}</Link>
               </li>
             ))}
+            <li>
+              <a href={REGLEMENT_URL} target="_blank" rel="noopener">
+                Huishoudelijk reglement
+              </a>
+            </li>
           </ul>
         </div>
         <div>
@@ -150,6 +155,15 @@ export function Footer() {
           <p>
             <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
           </p>
+          <ul className="footer-links footer-socials">
+            {SOCIALS.map((s) => (
+              <li key={s.url}>
+                <a href={s.url} target="_blank" rel="noopener">
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
           <JoinButton className="btn-sm" />
         </div>
       </div>
