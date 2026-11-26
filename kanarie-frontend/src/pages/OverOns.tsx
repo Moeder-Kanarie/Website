@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTitle } from '../hooks'
 import { JoinBand, PageHeader } from '../components'
-import { clublied, folklore } from '../content'
+import { clublied, folklore, REGLEMENT_URL } from '../content'
 
 function YouTube({ id, title }: { id: string; title: string }) {
   const [play, setPlay] = useState(false)
@@ -64,7 +64,7 @@ export default function OverOns() {
                 <div className="tl-body">
                   <h3>{s.title}</h3>
                   <p>{s.text}</p>
-                  {s.img && <img src={s.img} alt="" loading="lazy" />}
+                  {s.img && <img src={s.img} alt={s.title} loading="lazy" />}
                 </div>
               </li>
             ))}
@@ -130,6 +130,22 @@ export default function OverOns() {
               </div>
             </dl>
           </div>
+        </div>
+      </section>
+
+      <section className="section" id="reglement">
+        <div className="container narrow">
+          <p className="eyebrow">Reglement</p>
+          <h2>
+            Huishoudelijk <mark>reglement</mark>
+          </h2>
+          <p>
+            Hoe de club werkt, van lidmaatschap en clubvergadering tot het praesidium, de verkiezingen en de Oude
+            Garde: het staat allemaal in ons huishoudelijk reglement.
+          </p>
+          <a className="btn btn-primary" href={REGLEMENT_URL} target="_blank" rel="noopener">
+            Lees het reglement (PDF)
+          </a>
         </div>
       </section>
 

@@ -3,6 +3,8 @@
 // Link naar de inschrijvingen. Leeg = alle "Word lid"-knoppen staan uitgeschakeld.
 export const JOIN_URL = ''
 export const EMAIL = 'info@moederkanarie.be'
+export const SOCIALS = [{ label: 'Facebook', url: 'https://www.facebook.com/MoederKanarie' }]
+export const REGLEMENT_URL = '/documenten/huishoudelijk-reglement-moeder-kanarie.pdf'
 
 export const nav = [
   { to: '/over-ons', label: 'Over ons' },

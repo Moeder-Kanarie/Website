@@ -1,6 +1,6 @@
 import { useTitle } from '../hooks'
 import { JoinButton, PageHeader } from '../components'
-import { EMAIL, JOIN_URL } from '../content'
+import { EMAIL, JOIN_URL, SOCIALS } from '../content'
 
 export default function Contact() {
   useTitle('Contact')
@@ -17,6 +17,15 @@ export default function Contact() {
             <a className="big-link" href={`mailto:${EMAIL}`}>
               {EMAIL}
             </a>
+          </article>
+          <article className="card">
+            <h3>Volg ons</h3>
+            <p>Foto's, aankondigingen en het laatste nieuws van de club.</p>
+            {SOCIALS.map((s) => (
+              <a key={s.url} className="big-link" href={s.url} target="_blank" rel="noopener">
+                {s.label} →
+              </a>
+            ))}
           </article>
           <article className="card">
             <h3>Word lid</h3>
