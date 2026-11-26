@@ -178,7 +178,13 @@ mark { background: none; color: var(--yellow); }
 .footer-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .footer-links a { color: var(--muted); text-decoration: none; }
 .footer-links a:hover { color: #fff; }
-.footer-socials { margin-bottom: 1.25rem; }
+.socials { list-style: none; margin: 20px 0 0; padding: 0; display: flex; gap: 10px; }
+.socials a {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  color: #fff; background: rgba(255,255,255,0.08); box-shadow: inset 0 0 0 1px var(--line);
+  transition: background 0.15s, color 0.15s, transform 0.15s;
+}
+.socials a:hover { background: var(--yellow); color: var(--bg); transform: translateY(-2px); }
 .split { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
 .split p { color: var(--muted); max-width: 54ch; }
 .photo { border-radius: var(--radius); aspect-ratio: 4 / 3; object-fit: cover; width: 100%; height: auto; box-shadow: 0 30px 60px -30px rgba(0,0,0,0.7); }
